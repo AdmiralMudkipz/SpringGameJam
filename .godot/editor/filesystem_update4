@@ -1,0 +1,12 @@
+res://scenes/level_1.tscn
+res://Files/textures/gridmaterial.tres
+res://Files/Scenes/bullet.tscn
+res://Files/Scripts/ItemPickup.gd
+res://Files/Scripts/Player.gd
+res://Files/Scenes/gun.tscn
+res://Files/Scenes/player.tscn
+res://scenes/player.tscn
+res://Scenes/level_1.tscn
+res://Scenes/bullet.tscn
+res://Scenes/player.tscn
+res://Scenes/item_pickup.tscn
