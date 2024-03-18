@@ -11,13 +11,11 @@ var cooldown = 10
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
 	pass
 
 func _on_body_entered(body):
@@ -28,8 +26,10 @@ func _on_body_entered(body):
 	mesh.visible = true
 	
 func spawnPickup():
-	var first = randi_range(1,4)
+	var rand = randi_range(1,4)
+	var first = 1
 	if first == 1:
+		
 		pass
 	elif first == 2:
 		pass
@@ -37,4 +37,6 @@ func spawnPickup():
 		pass
 	elif first == 4:
 		pass
-	
+
+func pickupAdd(type):
+	pass 

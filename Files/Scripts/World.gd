@@ -28,7 +28,6 @@ func _on_host_button_pressed():
 	
 	add_player(multiplayer.get_unique_id())
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
 
 
 func _on_join_button_pressed():

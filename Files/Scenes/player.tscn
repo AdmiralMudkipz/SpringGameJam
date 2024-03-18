@@ -109,14 +109,14 @@ offset_bottom = 62.0
 label_settings = SubResource("LabelSettings_hhal4")
 
 [node name="low-poly_hk_mp5sd" parent="Head/Camera3D" instance=ExtResource("3_yhsjt")]
-transform = Transform3D(0.000597643, -2.21158e-05, 0.00293979, -0.000566816, 0.00294277, 0.000137369, -0.00288471, -0.000582805, 0.000582062, 0.387968, -0.770016, -0.639086)
-visible = false
+transform = Transform3D(0.000398428, -1.47437e-05, 0.00195986, -0.000377877, 0.00196184, 9.1579e-05, -0.00192314, -0.000388536, 0.000388041, 0.387968, -0.770016, -0.639086)
 
 [node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D"]
 target_position = Vector3(0, 0, -200)
 
 [node name="Hand" type="Node3D" parent="Head/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.334161, -0.564059, -1.38113)
+visible = false
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/Hand"]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 1, -0.0859194, 0.162445, 0.749495)

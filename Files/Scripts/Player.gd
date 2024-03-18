@@ -152,5 +152,5 @@ func _headbob(time) -> Vector3:
 func incrementKills():
 	killcount+=1
 	
-
-
+func pickupAdd(type):
+	pass

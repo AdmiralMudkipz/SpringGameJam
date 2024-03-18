@@ -57,6 +57,7 @@ environment = SubResource("Environment_5mcxc")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_erd1t")
+enabled = false
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D"]
 transform = Transform3D(19.9999, -0.00200235, 0.0448082, 0.0400321, 0.999998, 0.0151326, -0.0298921, -0.000501456, 30, -38.5972, 0, -33.0516)

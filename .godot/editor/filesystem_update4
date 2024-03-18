@@ -1,12 +1,9 @@
-res://Files/Scenes/player.tscn
+res://Files/Scripts/World.gd
+res://Files/Scenes/level_1.tscn
 res://Files/Scripts/ItemPickup.gd
 res://Files/Textures/gridmaterial.tres
 res://Files/Textures/gridmate.gdshader
-res://Files/Scenes/level_1.tscn
 res://Files/Scenes/bullet.tscn
+res://Files/Scenes/player.tscn
 res://Files/Scenes/item_pickup.tscn
-res://Files/Scripts/Player.gd
-res://Files/Scripts/Enemy.gd
 res://Files/Scenes/Enemy.tscn
-res://files/Scenes/Enemy.tscn
-res://Files/Scripts/World.gd
