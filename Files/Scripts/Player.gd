@@ -39,7 +39,7 @@ func _enter_tree():
 	
 	
 func _ready():
-	
+	add_to_group("enemy")
 	_enter_tree()
 	if is_multiplayer_authority(): 
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -59,7 +59,10 @@ func _unhandled_input(event):
 		return
 func _physics_process(delta):
 	if is_multiplayer_authority(): 
-	
+		
+		if health <= 0:
+			queue_free()
+			
 		shoot()
 		$Head/Camera3D/kills.text = "Kill Counter: " + var_to_str(killcount)
 		killcountertag = $Head/Camera3D/kills.text
@@ -115,9 +118,12 @@ func shoot():
 	if(Input.is_action_pressed("shoot")):
 		if(!anim_player.is_playing()):
 			if raycast.is_colliding():
-				var target = raycast.get_collider()
-				if target.is_in_group("enemy"):
-					target.health -= mp5Damage;
+				#var target = raycast.get_collider()
+				#if target.is_in_group("enemy"):
+				#	target.health -= mp5Damage;
+				raycast.get_collider().health -= mp5Damage
+			else:
+				pass
 			anim_player.play("MP5Fire")
 			
 		else:
@@ -142,7 +148,7 @@ func hurt(hit_points):
 	if health == 0:
 		die()
 func die():
-	get_tree().change_scene_to_file("res://Scenes/enu_2.tscn")
+	get_tree().change_scene_to_file("")
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP

@@ -71,7 +71,7 @@ properties/3/spawn = true
 properties/3/sync = true
 properties/3/watch = false
 
-[node name="Player" type="CharacterBody3D" groups=["player"]]
+[node name="Player" type="CharacterBody3D" groups=["enemy", "player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1903, 0.98448, -1.47282)
 script = ExtResource("1_nu1k3")
 
@@ -93,7 +93,6 @@ transform = Transform3D(1.9886, -0.100271, -0.188175, 0.104649, 1.99682, 0.04188
 visible = false
 
 [node name="ProgressBar" type="ProgressBar" parent="Head/Camera3D"]
-visible = false
 modulate = Color(1, 0, 0, 1)
 offset_right = 400.0
 offset_bottom = 27.0
@@ -110,21 +109,21 @@ label_settings = SubResource("LabelSettings_hhal4")
 
 [node name="low-poly_hk_mp5sd" parent="Head/Camera3D" instance=ExtResource("3_yhsjt")]
 transform = Transform3D(0.000398428, -1.47437e-05, 0.00195986, -0.000377877, 0.00196184, 9.1579e-05, -0.00192314, -0.000388536, 0.000388041, 0.387968, -0.770016, -0.639086)
+visible = false
 
 [node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D"]
 target_position = Vector3(0, 0, -200)
 
 [node name="Hand" type="Node3D" parent="Head/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.334161, -0.564059, -1.38113)
-visible = false
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/Hand"]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 1, -0.0859194, 0.162445, 0.749495)
+layers = 2
 mesh = SubResource("BoxMesh_vxbk0")
 skeleton = NodePath("../../../..")
 
 [node name="Label" type="Label" parent="Head/Camera3D"]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
