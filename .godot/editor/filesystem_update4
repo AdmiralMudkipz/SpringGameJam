@@ -1,10 +1,5 @@
-res://Files/Scenes/level_1.tscn
 res://Files/Scripts/ItemPickup.gd
-res://Files/textures/gridmaterial.tres
+res://Files/Textures/gridmaterial.tres
 res://Files/Textures/gridmate.gdshader
-res://Files/Scenes/bullet.tscn
+res://Files/Scenes/low_poly_hk_usp.tscn
 res://Files/Scenes/player.tscn
-res://Files/Scenes/item_pickup.tscn
-res://Files/Scenes/Enemy.tscn
-res://Files/Scripts/Player.gd
-res://files/textures/gridmate.gdshader
