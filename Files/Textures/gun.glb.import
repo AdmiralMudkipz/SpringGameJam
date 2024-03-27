@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://1kmy8e4qnki8"
-path="res://.godot/imported/gun.glb-77f21df4dc99dd02925bae8251b00732.scn"
+path="res://.godot/imported/gun.glb-a555d0289953bdf38e899753bcecf96a.scn"
 
 [deps]
 
-source_file="res://files/Textures/gun.glb"
-dest_files=["res://.godot/imported/gun.glb-77f21df4dc99dd02925bae8251b00732.scn"]
+source_file="res://Files/Textures/gun.glb"
+dest_files=["res://.godot/imported/gun.glb-a555d0289953bdf38e899753bcecf96a.scn"]
 
 [params]
 
