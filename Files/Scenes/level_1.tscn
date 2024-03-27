@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Files/Scripts/World.gd" id="1_eb2ia"]
 [ext_resource type="Shader" path="res://files/textures/gridmate.gdshader" id="1_oudwd"]
-[ext_resource type="Shader" uid="uid://b1j8ag47rbnaf" path="res://Files/Textures/gridmaterial.tres" id="2_vljux"]
-[ext_resource type="Texture2D" uid="uid://cnb4mgd50raau" path="res://Files/Textures/dirt.jpg" id="3_3l0g0"]
+[ext_resource type="Shader" uid="uid://b1j8ag47rbnaf" path="res://Files/textures/gridmaterial.tres" id="2_vljux"]
+[ext_resource type="Texture2D" uid="uid://cnb4mgd50raau" path="res://Files/textures/dirt.jpg" id="3_3l0g0"]
 [ext_resource type="PackedScene" uid="uid://ddbui5k7jayy6" path="res://Files/Scenes/item_pickup.tscn" id="5_5od27"]
 [ext_resource type="PackedScene" uid="uid://deqe6j34v0r8i" path="res://Files/Scenes/Enemy.tscn" id="6_vfuvn"]
 

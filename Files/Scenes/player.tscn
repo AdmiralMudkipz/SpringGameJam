@@ -17,35 +17,6 @@ bg_color = Color(0.301961, 0.301961, 0.301961, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_vxbk0"]
 
-[sub_resource type="Animation" id="Animation_w0w0k"]
-resource_name = "Idle"
-length = 3.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/low-poly_hk_usp:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector3(0.348381, -0.301004, -0.529307), Vector3(0.348, -0.35, -0.529)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/low-poly_hk_usp:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector3(0, 1.5708, 0), Vector3(-4.30448e-16, 1.5708, -0.122173)]
-}
-
 [sub_resource type="Animation" id="Animation_6h08e"]
 resource_name = "MP5Fire"
 length = 0.16
@@ -99,6 +70,35 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_w0w0k"]
+resource_name = "Idle"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head/Camera3D/low-poly_hk_usp:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector3(0.348381, -0.301004, -0.529307), Vector3(0.348, -0.35, -0.529)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head/Camera3D/low-poly_hk_usp:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(-4.30448e-16, 1.5708, -0.122173)]
 }
 
 [sub_resource type="Animation" id="Animation_fw4xw"]
@@ -206,13 +206,13 @@ current = true
 fov = 90.0
 
 [node name="low-poly_hk_usp" parent="Head/Camera3D" instance=ExtResource("2_pq865")]
-transform = Transform3D(-3.61999e-09, 0, 0.001, 0, 0.001, 0, -0.001, 0, -3.61999e-09, 0.348381, -0.301004, -0.529307)
+transform = Transform3D(-4.37114e-11, 0, 0.001, 0, 0.001, 0, -0.001, 0, -4.37114e-11, 0.348381, -0.301004, -0.529307)
 
 [node name="low-poly_hk_usp" parent="Head/Camera3D/low-poly_hk_usp" instance=ExtResource("2_pq865")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(-4.37114e-11, 0, 0.001, 0, 0.001, 0, -0.001, 0, -4.37114e-11, 0.348381, -0.301004, -0.529307)
 
 [node name="low-poly_hk_usp" parent="Head/Camera3D/low-poly_hk_usp/low-poly_hk_usp" instance=ExtResource("2_pq865")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(-4.37114e-11, 0, 0.001, 0, 0.001, 0, -0.001, 0, -4.37114e-11, 0.348381, -0.301004, -0.529307)
 
 [node name="gun" parent="Head/Camera3D" instance=ExtResource("2_6bj52")]
 transform = Transform3D(1.9886, -0.100271, -0.188175, 0.104649, 1.99682, 0.0418848, 0.185777, -0.0514923, 1.99069, 0.5, -0.21, -1.016)
