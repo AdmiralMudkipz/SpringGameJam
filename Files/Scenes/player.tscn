@@ -1,8 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://b7rmk4w1x3c0j"]
+[gd_scene load_steps=13 format=3 uid="uid://b7rmk4w1x3c0j"]
 
 [ext_resource type="Script" path="res://Files/Scripts/Player.gd" id="1_nu1k3"]
 [ext_resource type="PackedScene" uid="uid://g7wr0p3mh2ph" path="res://Files/Scenes/gun.tscn" id="2_6bj52"]
-[ext_resource type="PackedScene" uid="uid://dqbe0olkj0oic" path="res://Files/Scenes/low_poly_hk_usp.tscn" id="2_pq865"]
 [ext_resource type="PackedScene" uid="uid://c0x6ch8sp1km" path="res://Files/Models/low-poly_hk_mp5sd.glb" id="3_yhsjt"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_c4xbm"]
@@ -47,126 +46,11 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector3(-0.0859194, 0.162445, 0.749495)]
 }
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/low-poly_hk_usp:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.348381, -0.301004, -0.529307)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Head/Camera3D/low-poly_hk_usp:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 1.5708, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_w0w0k"]
-resource_name = "Idle"
-length = 3.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/low-poly_hk_usp:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector3(0.348381, -0.301004, -0.529307), Vector3(0.348, -0.35, -0.529)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/low-poly_hk_usp:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector3(0, 1.5708, 0), Vector3(-4.30448e-16, 1.5708, -0.122173)]
-}
-
-[sub_resource type="Animation" id="Animation_fw4xw"]
-resource_name = "move"
-loop_mode = 1
-step = 0.25
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/low-poly_hk_usp:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
-"transitions": PackedFloat32Array(-2, -2, -2, -2),
-"update": 0,
-"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/low-poly_hk_usp:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0.348381, -0.301004, -0.529307), Vector3(0.328, -0.281, -0.529), Vector3(0.348, -0.301, -0.529), Vector3(0.368, -0.281, -0.529)]
-}
-
-[sub_resource type="Animation" id="Animation_wb1mr"]
-resource_name = "shoot"
-length = 0.5
-loop_mode = 1
-step = 0.075
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/low-poly_hk_usp:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.075, 0.4),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 0.174533), Vector3(0, 1.5708, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/low-poly_hk_usp:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.075, 0.4),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector3(0.348381, -0.301004, -0.529307), Vector3(0.348, -0.251, -0.475), Vector3(0.348381, -0.301004, -0.529307)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3s6jw"]
 _data = {
-"Idle": SubResource("Animation_w0w0k"),
 "MP5Fire": SubResource("Animation_6h08e"),
-"RESET": SubResource("Animation_pml4b"),
-"move": SubResource("Animation_fw4xw"),
-"shoot": SubResource("Animation_wb1mr")
+"RESET": SubResource("Animation_pml4b")
 }
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_uas3a"]
@@ -201,18 +85,8 @@ shape = SubResource("ConvexPolygonShape3D_w6dt0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.732835, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00242901, 0, 0)
 current = true
 fov = 90.0
-
-[node name="low-poly_hk_usp" parent="Head/Camera3D" instance=ExtResource("2_pq865")]
-transform = Transform3D(-4.37114e-11, 0, 0.001, 0, 0.001, 0, -0.001, 0, -4.37114e-11, 0.348381, -0.301004, -0.529307)
-
-[node name="low-poly_hk_usp" parent="Head/Camera3D/low-poly_hk_usp" instance=ExtResource("2_pq865")]
-transform = Transform3D(-4.37114e-11, 0, 0.001, 0, 0.001, 0, -0.001, 0, -4.37114e-11, 0.348381, -0.301004, -0.529307)
-
-[node name="low-poly_hk_usp" parent="Head/Camera3D/low-poly_hk_usp/low-poly_hk_usp" instance=ExtResource("2_pq865")]
-transform = Transform3D(-4.37114e-11, 0, 0.001, 0, 0.001, 0, -0.001, 0, -4.37114e-11, 0.348381, -0.301004, -0.529307)
 
 [node name="gun" parent="Head/Camera3D" instance=ExtResource("2_6bj52")]
 transform = Transform3D(1.9886, -0.100271, -0.188175, 0.104649, 1.99682, 0.0418848, 0.185777, -0.0514923, 1.99069, 0.5, -0.21, -1.016)
@@ -242,11 +116,9 @@ target_position = Vector3(0, 0, -200)
 
 [node name="Hand" type="Node3D" parent="Head/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.334161, -0.564059, -1.38113)
-visible = false
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/Hand"]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 1, -0.0859194, 0.162445, 0.749495)
-visible = false
 layers = 2
 mesh = SubResource("BoxMesh_vxbk0")
 skeleton = NodePath("../../../..")
