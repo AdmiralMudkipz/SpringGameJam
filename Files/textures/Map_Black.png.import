@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biywlwgb17ml3"
-path.s3tc="res://.godot/imported/Map_Black.png-bd648a1a9af2fc7142d10e356f90c57b.s3tc.ctex"
+path.s3tc="res://.godot/imported/Map_Black.png-827e777e430a408f674e4a8ce618367c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Files/Textures/Map_Black.png"
-dest_files=["res://.godot/imported/Map_Black.png-bd648a1a9af2fc7142d10e356f90c57b.s3tc.ctex"]
+source_file="res://files/Textures/Map_Black.png"
+dest_files=["res://.godot/imported/Map_Black.png-827e777e430a408f674e4a8ce618367c.s3tc.ctex"]
 
 [params]
 
